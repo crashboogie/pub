@@ -109,7 +109,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# autorecon () { autorecon $1 -vv -o ~/Desktop/output/autorecon; }
+autorecon () { sudo autorecon $1 -vv -o ~/Desktop/output/autorecon; }
 nmapauto () { ~/Desktop/tools/nmapAutomator/nmapAutomator.sh $1 All --output ~/Desktop/output/nmapauto; }
 dirsearch () { sudo python3 ~/Desktop/tools/dirsearch/dirsearch.py -u $1; }
 alias empire='sudo powershell-empire'
