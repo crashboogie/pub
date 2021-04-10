@@ -110,7 +110,7 @@ if ! shopt -oq posix; then
 fi
 
 nmapauto () { ~/Desktop/tools/nmapAutomator/nmapAutomator.sh $1 All --output ~/Desktop/output; }
-#autorecon () { python3 /home/crash/Downloads/AutoRecon/src/autorecon/autorecon.py -vv $1; }
+dirsearch () { sudo python3 ~/Desktop/tools/dirsearch/dirsearch.py -u $1; }
 alias empire='sudo powershell-empire'
 alias http='sudo python -m SimpleHTTPServer 80'
 alias ip='ifconfig | grep  "inet * " | grep -v "inet 127*"'
@@ -122,8 +122,3 @@ alias multi='msfconsole -qx '\''use multi/handler; set PAYLOAD generic/shell_rev
 alias odir='xdg-open .'
 alias powerup='sudo apt update && sudo apt upgrade -y'
 alias tools='cd ~/Desktop/tools'
-
-# Created by `userpath` on 2020-06-22 02:00:31
-export PATH="$PATH:/home/crash/.local/bin"
-
-PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin/:/usr/local/games:/usr/games"
