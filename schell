@@ -1,0 +1,26 @@
+# One Liner
+echo "$USER  ALL=(ALL:ALL) NOPASSWD:ALL" | sudo tee --append /etc/sudoers && sudo apt-get update -y && sudo apt-get install terminator -y && mkdir ~/Desktop/tools && mkdir ~/Desktop/output && mkdir ~/Desktop/output/nmapauto && mkdir ~/Desktop/output/autorecon && curl https://raw.githubusercontent.com/orpheus321/pub/main/crashrc -o .crashrc && cp .crashrc ~/.bashrc && chsh -s /bin/bash && source ~/.bashrc && cd ~/Desktop/tools && git clone https://github.com/21y4d/nmapAutomator.git && sudo ln -s $(pwd)/nmapAutomator/nmapAutomator.sh /usr/local/bin/ && sudo apt install seclists curl enum4linux gobuster nbtscan nikto nmap onesixtyone oscanner smbclient smbmap smtp-user-enum snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf python3-pip -y && sudo python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git && curl https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh -o ~/Desktop/tools/linpeas.sh && curl https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/winPEAS/winPEASexe/binaries/x64/Release/winPEASx64.exe?raw=true -o ~/Desktop/tools/winpeasx64.exe && curl https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/winPEAS/winPEASexe/binaries/x86/Release/winPEASx86.exe?raw=true -o ~/Desktop/tools/winpeasx86.exe && curl https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/winPEAS/winPEASexe/binaries/Release/winPEASany.exe?raw=true -o ~/Desktop/tools/winpeasany.exe && curl https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/raw/master/winPEAS/winPEASbat/winPEAS.bat -o ~/Desktop/tools/winpeas.bat && git clone https://github.com/maurosoria/dirsearch.git ~/Desktop/tools/dirsearch
+
+# Individual
+
+echo "$USER  ALL=(ALL:ALL) NOPASSWD:ALL" | sudo tee --append /etc/sudoers
+sudo apt-get install terminator -y
+mkdir ~/Desktop/tools
+mkdir ~/Desktop/output
+mkdir ~/Desktop/output/nmapauto
+mkdir ~/Desktop/output/autorecon
+curl https://raw.githubusercontent.com/orpheus321/pub/main/crashrc -o .crashrc
+cp .crashrc ~/.bashrc
+chsh -s /bin/bash
+source ~/.bashrc
+cd ~/Desktop/tools
+git clone https://github.com/21y4d/nmapAutomator.git
+sudo ln -s $(pwd)/nmapAutomator/nmapAutomator.sh /usr/local/bin/
+sudo apt install seclists curl enum4linux gobuster nbtscan nikto nmap onesixtyone oscanner smbclient smbmap smtp-user-enum snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf python3-pip -y
+sudo python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
+curl https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh -o ~/Desktop/tools/linpeas.sh
+curl https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/winPEAS/winPEASexe/binaries/x64/Release/winPEASx64.exe?raw=true -o ~/Desktop/tools/winpeasx64.exe
+curl https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/winPEAS/winPEASexe/binaries/x86/Release/winPEASx86.exe?raw=true -o ~/Desktop/tools/winpeasx86.exe
+curl https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/blob/master/winPEAS/winPEASexe/binaries/Release/winPEASany.exe?raw=true -o ~/Desktop/tools/winpeasany.exe
+curl https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/raw/master/winPEAS/winPEASbat/winPEAS.bat -o ~/Desktop/tools/winpeas.bat
+git clone https://github.com/maurosoria/dirsearch.git ~/Desktop/tools/dirsearch
